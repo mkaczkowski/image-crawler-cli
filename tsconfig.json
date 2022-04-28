@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": false,
+    "inlineSourceMap": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "lib": ["esnext"],
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
